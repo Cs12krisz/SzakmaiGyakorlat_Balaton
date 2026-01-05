@@ -1,0 +1,15 @@
+C:\Users\CsKrisz\source\repos\BalatonCLI\BalatonCLI\bin\Debug\net8.0\BalatonCLI.exe
+C:\Users\CsKrisz\source\repos\BalatonCLI\BalatonCLI\bin\Debug\net8.0\utca.txt
+C:\Users\CsKrisz\source\repos\BalatonCLI\BalatonCLI\bin\Debug\net8.0\BalatonCLI.deps.json
+C:\Users\CsKrisz\source\repos\BalatonCLI\BalatonCLI\bin\Debug\net8.0\BalatonCLI.runtimeconfig.json
+C:\Users\CsKrisz\source\repos\BalatonCLI\BalatonCLI\bin\Debug\net8.0\BalatonCLI.dll
+C:\Users\CsKrisz\source\repos\BalatonCLI\BalatonCLI\bin\Debug\net8.0\BalatonCLI.pdb
+C:\Users\CsKrisz\source\repos\BalatonCLI\BalatonCLI\obj\Debug\net8.0\BalatonCLI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CsKrisz\source\repos\BalatonCLI\BalatonCLI\obj\Debug\net8.0\BalatonCLI.AssemblyInfoInputs.cache
+C:\Users\CsKrisz\source\repos\BalatonCLI\BalatonCLI\obj\Debug\net8.0\BalatonCLI.AssemblyInfo.cs
+C:\Users\CsKrisz\source\repos\BalatonCLI\BalatonCLI\obj\Debug\net8.0\BalatonCLI.csproj.CoreCompileInputs.cache
+C:\Users\CsKrisz\source\repos\BalatonCLI\BalatonCLI\obj\Debug\net8.0\BalatonCLI.dll
+C:\Users\CsKrisz\source\repos\BalatonCLI\BalatonCLI\obj\Debug\net8.0\refint\BalatonCLI.dll
+C:\Users\CsKrisz\source\repos\BalatonCLI\BalatonCLI\obj\Debug\net8.0\BalatonCLI.pdb
+C:\Users\CsKrisz\source\repos\BalatonCLI\BalatonCLI\obj\Debug\net8.0\BalatonCLI.genruntimeconfig.cache
+C:\Users\CsKrisz\source\repos\BalatonCLI\BalatonCLI\obj\Debug\net8.0\ref\BalatonCLI.dll
