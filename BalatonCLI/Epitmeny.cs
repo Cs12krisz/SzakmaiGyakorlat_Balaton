@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BalatonCLI
 {
-    internal class Epitmeny
+    public class Epitmeny
     {
         public Epitmeny(int szamok, string utca, string hazSzam, string adoKategoria, int terulet)
         {
