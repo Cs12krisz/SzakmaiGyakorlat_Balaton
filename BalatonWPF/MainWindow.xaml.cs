@@ -1,4 +1,5 @@
 ﻿using BalatonCLI;
+using Microsoft.Win32;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Text;
@@ -19,39 +20,87 @@ namespace BalatonWPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        static ObservableCollection<Epitmeny> epitmenyek = new ObservableCollection<Epitmeny>();
+        
+       ObservableCollection<Epitmeny> epitmenyek = new ObservableCollection<Epitmeny>();
         public static int akategoria, bkategoria, ckategoria;
+
+        private void btnModositas_Click(object sender, RoutedEventArgs e)
+        {
+            if (epitmenyek[dtgTabla.SelectedIndex].SetAdoKategoria(cBoxAdoKategoria.Text))
+            {
+                MessageBox.Show("A módosítás sikerült", "Információ", MessageBoxButton.OK, MessageBoxImage.Information);
+                dtgTabla.Items.Refresh();
+            }
+            else
+            {
+                MessageBox.Show("A módosításhoz nincs jogosúltsága", "Információ", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+
+        }
+
+        private void dtgTabla_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void btnMentes_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+
+            if (!ofd.ShowDialog().Value)
+            {
+                MessageBox.Show("Error");
+            }
+
+            using (StreamWriter sw = new StreamWriter(ofd.FileName))
+            {
+                sw.WriteLine("800 600 100");
+                foreach (var epitmeny in epitmenyek)
+                {
+                    sw.WriteLine(epitmeny);
+                }
+            }
+            MessageBox.Show("Sikeres mentés", "Információ", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
         public MainWindow()
         {
             InitializeComponent();
             cBoxAdoKategoria.SelectedIndex = 0;
             cBoxAdoKategoria.ItemsSource = new string[] { "A", "B", "C" };
-            Feladat1("utca.txt");
+            Feladat1(Environment.CurrentDirectory + "\\modositottadok.txt");
             dtgTabla.ItemsSource = epitmenyek;
         }
 
-        public static void Feladat1(string fajlNev)
+        public void Feladat1(string fajlNev)
         {
-            using (StreamReader sr = new StreamReader(fajlNev))
-            {
-                string[] elsoSor = sr.ReadLine().Split(" ");
-                akategoria = int.Parse(elsoSor[0]);
-                bkategoria = int.Parse(elsoSor[1]);
-                ckategoria = int.Parse(elsoSor[2]);
+            OpenFileDialog openFileDialog = new OpenFileDialog();
 
-                while (!sr.EndOfStream)
-                {
-                    var sor = sr.ReadLine().Split(" ");
-                    Epitmeny ujEpitmeny = new Epitmeny(
-                        int.Parse(sor[0]),
-                        sor[1],
-                        sor[2],
-                        sor[3],
-                        int.Parse(sor[4])
-                    );
-                    epitmenyek.Add(ujEpitmeny);
-                }
+            if (!openFileDialog.ShowDialog().Value)
+            {
+                MessageBox.Show("Error");
             }
+
+            StreamReader sr = new StreamReader(openFileDialog.FileName);
+            string[] elsoSor = sr.ReadLine().Split(" ");
+            akategoria = int.Parse(elsoSor[0]);
+            bkategoria = int.Parse(elsoSor[1]);
+            ckategoria = int.Parse(elsoSor[2]);
+
+           while (!sr.EndOfStream)
+           {
+                var sor = sr.ReadLine().Split(" ");
+                Epitmeny ujEpitmeny = new Epitmeny(
+                int.Parse(sor[0]),
+                sor[1],
+                sor[2],
+                sor[3],
+                int.Parse(sor[4])
+                );
+                epitmenyek.Add(ujEpitmeny);
+           }
+           sr.Close();
+
         }
     }
 }

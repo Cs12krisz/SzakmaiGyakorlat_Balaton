@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BalatonCLI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+19f041bc31287aa6e2bcb555f3f273a738c3f813")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3491f3f681c31e128ab2e04637d40101111c21e6")]
 [assembly: System.Reflection.AssemblyProductAttribute("BalatonCLI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BalatonCLI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

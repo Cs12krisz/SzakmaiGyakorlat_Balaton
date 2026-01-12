@@ -9,7 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BalatonCLI\BalatonCLI.csproj" />
+    <ProjectReference Include="..\\BalatonCLI\\BalatonCLI.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="modositottadok.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

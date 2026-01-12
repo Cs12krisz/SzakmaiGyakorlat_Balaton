@@ -12,18 +12,18 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <DataGrid x:Name="dtgTabla" Margin="10" ColumnWidth="*"/>
+        <DataGrid x:Name="dtgTabla" Margin="10" ColumnWidth="*" SelectionChanged="dtgTabla_SelectionChanged"/>
         <ComboBox x:Name="cBoxAdoKategoria" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="40"/>
         <StackPanel  Grid.Column="2">
             <Button x:Name="btnModositas" 
                     Content="Módosítás"
                     HorizontalAlignment="Center"
-                    Margin="0 50 0 0"
+                    Margin="0 50 0 0" Click="btnModositas_Click"
                     />
             <Button x:Name="btnMentes" 
                     Content="Mentés"
                     HorizontalAlignment="Center"
-                    Margin="0 10"
+                    Margin="0 10" Click="btnMentes_Click"
                     />
         </StackPanel>
     </Grid>
