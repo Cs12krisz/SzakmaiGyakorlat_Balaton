@@ -28,3 +28,5 @@ C:\Users\CsKrisz\Desktop\SzakmaiGyakorlat_Balaton\BalatonWPF\bin\Debug\net8.0-wi
 C:\Users\CsKrisz\Desktop\SzakmaiGyakorlat_Balaton\BalatonWPF\obj\Debug\net8.0-windows\BalatonWPF.csproj.AssemblyReference.cache
 C:\Users\CsKrisz\Desktop\SzakmaiGyakorlat_Balaton\BalatonWPF\obj\Debug\net8.0-windows\BalatonWPF.csproj.Up2Date
 C:\Users\CsKrisz\Desktop\SzakmaiGyakorlat_Balaton\BalatonWPF\bin\Debug\net8.0-windows\modositottadok.txt
+C:\Users\CsKrisz\Desktop\SzakmaiGyakorlat_Balaton\BalatonWPF\obj\Debug\net8.0-windows\ModositasiAblak.g.cs
+C:\Users\CsKrisz\Desktop\SzakmaiGyakorlat_Balaton\BalatonWPF\obj\Debug\net8.0-windows\ModositasiAblak.baml

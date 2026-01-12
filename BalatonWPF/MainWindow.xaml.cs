@@ -21,21 +21,18 @@ namespace BalatonWPF
     public partial class MainWindow : Window
     {
         
-       ObservableCollection<Epitmeny> epitmenyek = new ObservableCollection<Epitmeny>();
+        static ObservableCollection<Epitmeny> epitmenyek = new ObservableCollection<Epitmeny>();
         public static int akategoria, bkategoria, ckategoria;
+
+        public static void Modositas(Epitmeny telek, int index)
+        {
+            epitmenyek[index] = telek;
+        }
 
         private void btnModositas_Click(object sender, RoutedEventArgs e)
         {
-            if (epitmenyek[dtgTabla.SelectedIndex].SetAdoKategoria(cBoxAdoKategoria.Text))
-            {
-                MessageBox.Show("A módosítás sikerült", "Információ", MessageBoxButton.OK, MessageBoxImage.Information);
-                dtgTabla.Items.Refresh();
-            }
-            else
-            {
-                MessageBox.Show("A módosításhoz nincs jogosúltsága", "Információ", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
-
+            ModositasiAblak modositasiAblak = new ModositasiAblak(epitmenyek[dtgTabla.SelectedIndex], dtgTabla.SelectedIndex);
+            modositasiAblak.ShowDialog();
         }
 
         private void dtgTabla_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -68,11 +65,11 @@ namespace BalatonWPF
             InitializeComponent();
             cBoxAdoKategoria.SelectedIndex = 0;
             cBoxAdoKategoria.ItemsSource = new string[] { "A", "B", "C" };
-            Feladat1(Environment.CurrentDirectory + "\\modositottadok.txt");
+            Feladat1();
             dtgTabla.ItemsSource = epitmenyek;
         }
 
-        public void Feladat1(string fajlNev)
+        public void Feladat1()
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
 

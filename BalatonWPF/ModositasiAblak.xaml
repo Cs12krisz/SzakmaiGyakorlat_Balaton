@@ -18,6 +18,7 @@
             <TextBox x:Name="tbxAdoKategoria"/>
             <Label Content="Terület"/>
             <TextBox x:Name="tbxTerulet"/>
+            <Button Content="Módosítás befejezése" Click="Button_Click"/>
         </StackPanel>
     </Grid>
 </Window>
