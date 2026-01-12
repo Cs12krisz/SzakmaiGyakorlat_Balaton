@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CsKrisz\\source\\repos\\BalatonCLI\\BalatonCLITests\\BalatonCLITests.csproj": {}
+    "C:\\Users\\CsKrisz\\Desktop\\SzakmaiGyakorlat_Balaton\\BalatonCLITests\\BalatonCLITests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CsKrisz\\source\\repos\\BalatonCLI\\BalatonCLITests\\BalatonCLITests.csproj": {
+    "C:\\Users\\CsKrisz\\Desktop\\SzakmaiGyakorlat_Balaton\\BalatonCLITests\\BalatonCLITests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CsKrisz\\source\\repos\\BalatonCLI\\BalatonCLITests\\BalatonCLITests.csproj",
+        "projectUniqueName": "C:\\Users\\CsKrisz\\Desktop\\SzakmaiGyakorlat_Balaton\\BalatonCLITests\\BalatonCLITests.csproj",
         "projectName": "BalatonCLITests",
-        "projectPath": "C:\\Users\\CsKrisz\\source\\repos\\BalatonCLI\\BalatonCLITests\\BalatonCLITests.csproj",
+        "projectPath": "C:\\Users\\CsKrisz\\Desktop\\SzakmaiGyakorlat_Balaton\\BalatonCLITests\\BalatonCLITests.csproj",
         "packagesPath": "C:\\Users\\CsKrisz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CsKrisz\\source\\repos\\BalatonCLI\\BalatonCLITests\\obj\\",
+        "outputPath": "C:\\Users\\CsKrisz\\Desktop\\SzakmaiGyakorlat_Balaton\\BalatonCLITests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\CsKrisz\\source\\repos\\BalatonCLI\\BalatonCLI\\BalatonCLI.csproj": {
-                "projectPath": "C:\\Users\\CsKrisz\\source\\repos\\BalatonCLI\\BalatonCLI\\BalatonCLI.csproj"
+              "C:\\Users\\CsKrisz\\Desktop\\SzakmaiGyakorlat_Balaton\\BalatonCLI\\BalatonCLI.csproj": {
+                "projectPath": "C:\\Users\\CsKrisz\\Desktop\\SzakmaiGyakorlat_Balaton\\BalatonCLI\\BalatonCLI.csproj"
               }
             }
           }
@@ -84,14 +84,14 @@
         }
       }
     },
-    "C:\\Users\\CsKrisz\\source\\repos\\BalatonCLI\\BalatonCLI\\BalatonCLI.csproj": {
+    "C:\\Users\\CsKrisz\\Desktop\\SzakmaiGyakorlat_Balaton\\BalatonCLI\\BalatonCLI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CsKrisz\\source\\repos\\BalatonCLI\\BalatonCLI\\BalatonCLI.csproj",
+        "projectUniqueName": "C:\\Users\\CsKrisz\\Desktop\\SzakmaiGyakorlat_Balaton\\BalatonCLI\\BalatonCLI.csproj",
         "projectName": "BalatonCLI",
-        "projectPath": "C:\\Users\\CsKrisz\\source\\repos\\BalatonCLI\\BalatonCLI\\BalatonCLI.csproj",
+        "projectPath": "C:\\Users\\CsKrisz\\Desktop\\SzakmaiGyakorlat_Balaton\\BalatonCLI\\BalatonCLI.csproj",
         "packagesPath": "C:\\Users\\CsKrisz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CsKrisz\\source\\repos\\BalatonCLI\\BalatonCLI\\obj\\",
+        "outputPath": "C:\\Users\\CsKrisz\\Desktop\\SzakmaiGyakorlat_Balaton\\BalatonCLI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

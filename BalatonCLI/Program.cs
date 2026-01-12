@@ -7,7 +7,7 @@ namespace BalatonCLI
     public class Program
     {
         static List<Epitmeny> epitmenyek = new List<Epitmeny>();
-        static int akategoria, bkategoria, ckategoria;
+        public static int akategoria, bkategoria, ckategoria;
 
         static void Main(string[] args)
         {
@@ -35,9 +35,13 @@ namespace BalatonCLI
         {
             var epitmenyekCsoport = epitmenyek
                 .GroupBy(e => e.AdoKategoria)
-                .Select(e => new { e.Key, Db = e.Count(), Osszesen = e.Sum(elem => ado(elem.AdoKategoria, elem.Terulet)) })
+                .Select(e => new 
+                { e.Key,
+                    Db = e.Count(),
+                    Osszesen = e.Sum(elem => ado(elem.AdoKategoria, elem.Terulet))
+                })
                 .OrderBy(e => e.Key);
-                ;
+                
             foreach (var csoport in epitmenyekCsoport)
             {
                 Console.WriteLine($"{csoport.Key} sávba {csoport.Db} telek esik, az adó {csoport.Osszesen} Ft.");
@@ -88,20 +92,27 @@ namespace BalatonCLI
 
         public static int ado(string kategoria, int alapterulet)
         {
+            int ado = 0;
             if (kategoria == "A")
             {
-                return akategoria * alapterulet;
+                ado = akategoria * alapterulet;
             }
             else if (kategoria == "B")
             {
-                return bkategoria * alapterulet;
+                ado = bkategoria * alapterulet;
             }
             else if (kategoria == "C")
             {
-                return ckategoria * alapterulet;
+                ado = ckategoria * alapterulet;
             }
 
-            return 0;
+            if(ado < 10000)
+            {
+                return 0;
+            }
+
+            return ado;
+
         }
     }
 }

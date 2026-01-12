@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n1ycP+S8EeY=",
+  "dgSpecHash": "CkRid7J5tZM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\CsKrisz\\source\\repos\\BalatonCLI\\BalatonCLITests\\BalatonCLITests.csproj",
+  "projectFilePath": "C:\\Users\\CsKrisz\\Desktop\\SzakmaiGyakorlat_Balaton\\BalatonCLITests\\BalatonCLITests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CsKrisz\\.nuget\\packages\\microsoft.applicationinsights\\2.22.0\\microsoft.applicationinsights.2.22.0.nupkg.sha512",
     "C:\\Users\\CsKrisz\\.nuget\\packages\\microsoft.codecoverage\\17.12.0\\microsoft.codecoverage.17.12.0.nupkg.sha512",

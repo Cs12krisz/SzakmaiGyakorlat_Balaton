@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BalatonCLITests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7430a3135718d5d88cd7fc0a081d4b61d8a883a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("BalatonCLITests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BalatonCLITests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
